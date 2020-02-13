@@ -45,4 +45,3 @@ class GameLibrary:
             return_str += "       Launch Year = " + str(game.platform.launch_year) + "\n"
             game_count += 1
         return return_str
-

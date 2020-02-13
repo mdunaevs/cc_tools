@@ -1,0 +1,34 @@
+{
+    "game1" :
+    {
+        "platform":
+        {
+            "launch_year" : 1989,
+            "name" : "Atari Lynx"
+        },
+        "title" : "Chip's Challenge",
+        "year" : 1989
+    },
+
+    "game2" :
+    {
+        "platform" :
+        {
+            "launch_year" : 2003,
+            "name" : "Steam"
+        },
+        "title" : "Chip's Challenge 2",
+        "year" : 2015
+    },
+
+    "game3" : 
+    {
+        "platform" :
+        {
+            "launch_year" : 1985,
+            "name" : "NES"
+        },
+        "title" : "Super Mario Bros",
+        "year" : 1985
+    }
+}
