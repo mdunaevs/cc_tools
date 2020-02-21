@@ -1,6 +1,7 @@
 import cc_dat_utils
 import json
 from cc_classes import *
+from cc_dat_utils import *
 
 #Part 3
 #Load your custom JSON file
@@ -25,6 +26,8 @@ def make_CClevelpack_from_json_data(json_data):
         op_fields = []
         # Iterate through all the possible fields (title, password, hint, and monsters)
         for field in level["optional_fields"]:
+            print(field)
+            print(field["value"])
             if (field["field_type"] == "title"): # Add title field
                 op_fields.append(CCMapTitleField(field["value"]))
             elif (field["field_type"] == "password"): # Add the password field
@@ -49,3 +52,5 @@ with open(input_json_file, "r") as reader:
 
 levelPack = make_CClevelpack_from_json_data(game_json_data)
 print(levelPack)
+
+write_cc_level_pack_to_dat(levelPack, "data/mdunaevs_cc1.dat")

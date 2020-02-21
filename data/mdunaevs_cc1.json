@@ -46,11 +46,11 @@
             },
             {
                 "field_type" : "password",
-                "value" : "MAXD"
+                "value" : [212, 216, 193, 221]
             },
             {
                 "field_type" : "hint",
-                "value" : "Collect the red key to unlock the door, then get all the chips."
+                "value" : "Collect the red key to unlock the door"
             },
             {
                 "field_type" : "monster",
@@ -121,7 +121,7 @@
             },
             {
                 "field_type" : "password",
-                "value" : "DUNA"
+                "value" : [221, 204, 215, 216]
             },
             {
                 "field_type" : "hint",

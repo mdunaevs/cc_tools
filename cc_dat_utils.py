@@ -272,6 +272,7 @@ def write_level_to_dat(level, writer):
     total_field_byte_size = calculate_total_optional_field_byte_size(level.optional_fields)
     writer.write(total_field_byte_size.to_bytes(2, cc_classes.BYTE_ORDER))
     for field in level.optional_fields:
+        print(field)
         write_field_to_dat(field, writer)
 
 
@@ -287,3 +288,4 @@ def write_cc_level_pack_to_dat(cc_dat, dat_file):
         writer.write(cc_dat.level_count.to_bytes(2, cc_classes.BYTE_ORDER))
         for level in cc_dat.levels:
             write_level_to_dat(level, writer)
+
