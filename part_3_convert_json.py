@@ -44,10 +44,10 @@ def make_CClevelpack_from_json_data(json_data):
         levelPack.add_level(l)
     return levelPack
 
-input_json_file = "data/mdunaevs_cc1.json"
+input_json_file = "data/mdunaevs_cc_level_data.json"
 with open(input_json_file, "r") as reader:
     game_json_data = json.load(reader)
 
 levelPack = make_CClevelpack_from_json_data(game_json_data)
 
-write_cc_level_pack_to_dat(levelPack, "data/mdunaevs_cc1_v7.dat")
+write_cc_level_pack_to_dat(levelPack, "data/mdunaevs_cc1_v11.dat")
